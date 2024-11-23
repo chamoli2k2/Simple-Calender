@@ -25,7 +25,7 @@ const AddEvent = () => {
     setIsLoading(true);
 
     try {
-        const token = localStorage.getItem('token');
+      const token = localStorage.getItem('token');
       const response = await axios.post(`${BASE_URL}/api/events/create`, {
         title,
         description,
@@ -142,6 +142,15 @@ const AddEvent = () => {
             }`}
           >
             {isLoading ? 'Adding Event...' : 'Add Event'}
+          </button>
+
+          {/* Back to Listing Button */}
+          <button
+            type="button"
+            onClick={() => navigate('/listing')}
+            className="w-full py-4 mt-4 bg-gray-600 text-white rounded-lg font-bold hover:bg-gray-500 transition-all"
+          >
+            Back to Listing
           </button>
         </form>
       </div>

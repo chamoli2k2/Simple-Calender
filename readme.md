@@ -1,6 +1,3 @@
-Here’s a detailed **README.md** file for your simple calendar web app:
-
----
 
 # Simple Calendar Web App
 
@@ -21,6 +18,7 @@ This is a **Simple Calendar Web Application** that allows users to manage events
 
 ## File Structure
 
+```
 ├── api
 │   ├── config          # Contains database configuration and other setup files
 │   ├── controllers     # Handles business logic for API endpoints
@@ -40,7 +38,7 @@ This is a **Simple Calendar Web Application** that allows users to manage events
 │       └── App.js      # Main React app entry point
 │   └── package.json    # Client dependencies and scripts
 ├── .gitignore          # Ignored files and directories
-
+````
 ---
 
 ## Environment Variables
@@ -51,16 +49,6 @@ The project uses the following environment variables. You will need to create a 
 - **ACCESS_TOKEN_SECRET**: Secret key for generating access tokens
 - **REFRESH_TOKEN_SECRET**: Secret key for generating refresh tokens
 - **PORT**: Port on which the server will run
-
----
-
-## API Documentation
-
-The API documentation is available and describes all endpoints, request methods, and parameters in detail. To view the API documentation:
-
-1. Start the server by running `npm start` in the root directory.
-2. Navigate to `http://localhost:5000/api-docs` (or the deployed URL).
-
 ---
 
 ## Tech Stack
@@ -77,6 +65,7 @@ The API documentation is available and describes all endpoints, request methods,
 - **MongoDB**: As the database
 - **JWT**: For user authentication
 - **Mongoose**: For MongoDB object modeling
+- **Bcryptjs**: For Password encryption and decryption
 
 ---
 
@@ -101,7 +90,7 @@ cd <repository-name>
 3. Create a `.env` file in the root of the `api` folder and add the required environment variables (refer to the "Environment Variables" section above).
 4. Start the server:
    ```bash
-   npm start
+   npm run dev
    ```
 
 ### **3. Setup the Client**
@@ -116,7 +105,7 @@ cd <repository-name>
    ```
 3. Start the React application:
    ```bash
-   npm start
+   npm run dev
    ```
 
 ### **4. Access the Application**
@@ -128,5 +117,3 @@ Once the server and client are running:
 
 
 ---
-
-Let me know if you want anything else added or refined!
